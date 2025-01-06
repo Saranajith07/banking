@@ -1,0 +1,84 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: url('img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #121111;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .bank-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-bar a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #0073e6;
+  }
+  
+  .nav-bar a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Content */
+  .content {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  h1, h2 {
+    margin-bottom: 20px;
+  }
+  
+  p.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005bb5;
+  }
+  

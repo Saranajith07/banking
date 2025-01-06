@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - ARS Bank</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(img.jpg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .header {
+      width: 100%;
+      background-color: #0044cc;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .bank-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+      margin-top: 100px; /* Avoid overlap with the fixed header */
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input {
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #0044cc;
+      color: white;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #003399;
+    }
+
+    p {
+      margin-top: 10px;
+    }
+
+    a {
+      color: #0044cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <img src="bank-logo.png" alt="Bank Logo" class="logo">
+      <span class="bank-name">ARS Bank</span>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Login</h2>
+    <form id="login-form">
+      <input type="text" id="login-acc" placeholder="Account Number" required>
+      <input type="password" id="login-pass" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

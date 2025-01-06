@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deposit - ARS Bank</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url(img.jpg);
+    }
+    .header {
+      background-color: #0047ab;
+      color: white;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-container {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-bar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .nav-bar a:hover, .nav-bar a.active {
+      background-color: #003580;
+      border-radius: 5px;
+    }
+    .content {
+      text-align: center;
+      margin-top: 100px;
+      padding: 2rem;
+    }
+    h2 {
+      color: #333;
+    }
+    form {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #0047ab;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #003580;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo-container">
+      <span class="bank-name">ARS Bank</span>
+    </div>
+    <nav class="nav-bar">
+      <a href="dashboard.html">Home</a>
+      <a href="deposit.html" class="active">Deposit</a>
+      <a href="withdraw.html">Withdraw</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <h2>Deposit Funds</h2>
+    <form id="deposit-form">
+      <input type="text" id="deposit-acc" placeholder="Account Number" required>
+      <input type="password" id="deposit-pass" placeholder="Password" required>
+      <input type="number" id="deposit-amt" placeholder="Amount" required>
+      <button type="submit">Deposit</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
